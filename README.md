@@ -1,23 +1,28 @@
 rancid_test Cookbook
 ====================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook installs and sets up rancid.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+This cookbook is strictly for Fedora/EPEL testing so the requirements are
+pretty strict.
 
-e.g.
-#### packages
-- `toaster` - rancid_test needs toaster to brown your bagel.
+#### Supported OSs
+- Fedora 21
+- Fedora 20
+- CentOS 7.1
+- CentOS 6.6
+- CentOS 5.11
+
+#### Cookbook Requirements
+- `yum-epel` - needed to get EPEL on CentOS.
+- `chef-sugar` - because a spoon full of sugar helps the medicine go down.
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
-e.g.
+None yet.
+
 #### rancid_test::default
 <table>
   <tr>
@@ -37,9 +42,6 @@ e.g.
 Usage
 -----
 #### rancid_test::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
 Just include `rancid_test` in your node's `run_list`:
 
 ```json
@@ -53,9 +55,6 @@ Just include `rancid_test` in your node's `run_list`:
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
@@ -65,4 +64,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: David Brown <dmlb2000@gmail.com>
