@@ -1,0 +1,20 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-7
+  - name: centos-6
+  - name: centos-5
+  - name: fedora-21
+  - name: fedora-20
+
+suites:
+  - name: default
+    run_list:
+      - recipe[rancid_test::default]
+    attributes:
